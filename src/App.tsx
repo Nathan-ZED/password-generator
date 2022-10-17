@@ -1,25 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import PassInput from "./Components/PassInput/PassInput";
+import Generator from "./Components/Generator/Generator";
+import { AppContextProvider } from './Context/AppContext';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppContextProvider>
+      <article className={"app-container"}>
+            <h1>Password Generator</h1>
+            <PassInput/>
+            <Generator />
+      </article>
+    </AppContextProvider>
   );
 }
 

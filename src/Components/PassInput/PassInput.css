@@ -1,0 +1,30 @@
+div.pass-input {
+    width: 90%;
+    background: #4E4C5A;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    margin: auto;
+}
+
+div.pass-input input[type="text"] {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    font-size: 30px;
+    color: #fff;
+    font-weight: 700;
+}
+
+input[type="text"]:focus {
+    outline: none;
+}
+
+.img {
+    width: 1.5em;
+    height: 1.5em;
+    color: #A4FFB0;
+}

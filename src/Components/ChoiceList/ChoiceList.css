@@ -1,0 +1,36 @@
+ul.list-choice {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0%;
+}
+
+ul.list-choice li {
+    display: flex;
+    align-items: center;
+    margin: .3rem 0;
+}
+
+ul.list-choice li label {
+    color: #fff;
+    margin: 0 0 0 .4rem;
+    font-weight: 500;
+}
+
+ul.list-choice li input[type="checkbox"] {
+    background-color: #ff4500;
+    width: 20px;
+    height: 20px;
+    accent-color: #A4FFB0;
+}
+
+ul.list-choice li input[type="checkbox"]:checked::before {
+    accent-color: #A4FFB0;
+}
+
+
+ul.list-choice li input[type="checkbox"]:checked::after {
+    accent-color: #A4FFB0;
+}
